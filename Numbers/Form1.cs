@@ -30,7 +30,18 @@ namespace Numbers
             richTextBox1.AppendText(pi.ToString("N3") + "\n");
             richTextBox1.AppendText(pi.ToString("N0") + "\n");
             richTextBox1.AppendText(pi.ToString("0.00") + "\n");
+
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
